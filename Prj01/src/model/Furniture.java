@@ -2,17 +2,29 @@ package model;
 
 public class Furniture {
     private String name;
-    private int minSquare;
-    private int maxSquare;
-
-    public Furniture(String name, int maxSquare) {
+    private double minSquare;
+    private double maxSquare;
+    
+    public Furniture(String name, double minSquare) {
         this.name = name;
-        this.maxSquare = maxSquare;
+        this.minSquare = minSquare;
+        maxSquare = minSquare;
     }
 
-    public Furniture(String name, int minSquare, int maxSquare) {
+    public Furniture(String name, double minSquare, double maxSquare) {
         this.name = name;
         this.minSquare = minSquare;
         this.maxSquare = maxSquare;
     }
+
+    public String getName() {
+        return name;
+    }
+    public double getMinSquare() {
+        return minSquare;
+    }
+    public double getMaxSquare() {
+        return maxSquare;
+    }
+
 }

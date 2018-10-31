@@ -1,9 +1,17 @@
 package model;
 
 public class Lamp {
-    private int illuminate;
+    private int illuminance;
 
-    public Lamp(int illuminate) {
-        this.illuminate = illuminate;
+    public Lamp(int illuminance) {
+        this.illuminance = illuminance;
+    }
+
+    public int getIlluminance() {
+        return illuminance;
+    }
+
+    public void setIlluminance(int illuminance) {
+        this.illuminance = illuminance;
     }
 }
