@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Appenders>
+        <File name="file1" fileName="target/logs/duplicatesByCheckSum.log">
+            <PatternLayout>
+                <Pattern>%m%n</Pattern>
+            </PatternLayout>
+        </File>
+        <File name="file2" fileName="target/logs/duplicatesByFullName.log">
+            <PatternLayout>
+                <Pattern>%m%n</Pattern>
+            </PatternLayout>
+        </File>
+    </Appenders>
+    <Loggers>
+        <Logger name="duplicatesBySum" level="trace" >
+            <AppenderRef ref="file1"/>
+        </Logger>
+        <Logger name="duplicatesByName" level="trace">
+            <AppenderRef ref="file2"/>
+        </Logger>
+    </Loggers>
+</Configuration>
